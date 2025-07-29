@@ -18,7 +18,7 @@ const images = [img_1, img_2, img_3, img_4, img_5, img_6, img_7];
 const SliderPage = () => {
   return (
     <div className="w-full flex items-center justify-center">
-      <div className="lg:w-[80%] w-[95%] h-[95%] p-2 ">
+      <div className="lg:w-[80%] w-full h-full p-2 ">
         <Swiper
           modules={[Autoplay]}
           slidesPerView={3}

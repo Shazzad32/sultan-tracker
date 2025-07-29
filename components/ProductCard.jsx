@@ -4,13 +4,13 @@ import OrderNowButton from "./OrderNowButton";
 
 const ProductCard = ({ image, name, price_1, price_2, price_3 }) => {
   return (
-    <div className="lg:w-[300px] w-[95%] gap-3  bg-white shadow-lg border-1 border-amber-600 rounded-2xl overflow-hidden flex flex-col items-center p-3 hover:shadow-2xl transition-all duration-300">
+    <div className="lg:w-[300px] w-full gap-3  bg-white shadow-lg border-1 border-amber-600 rounded-2xl overflow-hidden flex flex-col items-center p-3 hover:shadow-2xl transition-all duration-300">
       <div className="w-full h-[220px] relative">
         <Image
           src={image}
           alt={name}
           layout="fill"
-          className="rounded-xl p-4"
+          className="rounded-xl p-7"
         />
       </div>
 

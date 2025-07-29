@@ -11,10 +11,10 @@ const videos = [
 const Review = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <div className="lg:text-4xl text-xl lg:w-[80%] w-[90%] rounded-md mt-2 mb-2 text-center font-extrabold p-6 bg-red-300">
+      <div className="lg:text-4xl text-xl lg:w-[80%] w-full rounded-md mt-2 mb-2 text-center font-extrabold p-6 bg-red-300">
         কাস্টমার রিভিউ
       </div>
-      <div className="h-auto lg:w-[80%] w-[95%] bg-white flex flex-col lg:flex-row gap-4 justify-center items-center p-4 rounded-lg shadow">
+      <div className="h-auto lg:w-[80%] w-full bg-white flex flex-col lg:flex-row gap-4 justify-center items-center p-4 rounded-lg shadow">
         {videos.map((url, index) => (
           <Card
             key={index}
@@ -32,8 +32,8 @@ const Review = () => {
         ))}
       </div>
 
-      <div className="p-4 bg-black rounded-md lg:w-[80%] w-[90%] mb-4 flex flex-col items-center">
-        <h1 className="p-4 text-3xl font-extrabold text-white text-center">
+      <div className="p-2 bg-black rounded-md lg:w-[80%] w-full mb-4 flex flex-col items-center">
+        <h1 className="p-4 lg:text-3xl text-xl font-extrabold text-white text-center">
           আপনার যেকোনো প্রশ্নে বা সহায়তায় আমরা আছি
         </h1>
         <div className="p-3 mb-2 w-[80%] lg:w-[60%] bg-orange-400 text-white text-2xl font-extrabold flex items-center justify-center rounded-md">

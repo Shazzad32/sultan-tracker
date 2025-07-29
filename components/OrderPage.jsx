@@ -113,7 +113,7 @@ const OrderPage = () => {
   return (
     <section
       id="order"
-      className="w-full min-h-screen bg-[#f8f8f8] flex justify-center items-center p-4"
+      className="w-full min-h-screen bg-[#f8f8f8] flex justify-center items-center p-2"
     >
       <div className="w-full max-w-6xl bg-white rounded-xl p-6 shadow-md">
         <h1 className="text-xl md:text-2xl text-center font-bold text-red-600 mb-2">
