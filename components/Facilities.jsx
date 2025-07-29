@@ -19,10 +19,10 @@ const Facilities = () => {
           {gpsFeatures.map((item, index) => (
             <div
               key={index}
-              className="flex items-start p-2 rounded-xl shadow-md border bg-white gap-3"
+              className="flex items-start p-2 rounded-xl shadow-md border-b-2 border-orange-600 bg-white gap-3"
             >
-              <div className="text-red-500 mt-1 text-xl">📍</div>
-              <div>
+              <div className="text-red-500 mt-1 text-xl">👉</div>
+              <div className="text-justify">
                 <strong>{item.title}:</strong> {item.description}
               </div>
             </div>

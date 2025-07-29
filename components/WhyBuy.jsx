@@ -11,10 +11,10 @@ const WhyBuy = () => {
         {dddd.map((item, index) => (
           <div
             key={index}
-            className="flex items-start p-2 rounded-xl shadow-md border bg-white gap-3"
+            className="flex items-start p-2 rounded-xl border-b-2 border-orange-600 shadow-md bg-white gap-3"
           >
-            <div className="text-red-500 mt-1 text-xl">📍</div>
-            <div>{item.description}</div>
+            <div className="text-red-500 mt-1 text-xl">👉</div>
+            <div className="text-justify">{item.description}</div>
           </div>
         ))}
       </div>
