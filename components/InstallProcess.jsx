@@ -4,7 +4,7 @@ import { installationData } from "../data";
 const InstallProcess = () => {
   return (
     <div className="w-full flex flex-col items-center ">
-      <div className="lg:text-4xl text-xl lg:w-[80%] w-full text-center font-extrabold rounded-md p-6 bg-red-300">
+      <div className="lg:text-4xl text-xl lg:w-[80%] w-full text-center font-extrabold rounded-md p-6 text-white bg-gray-700">
         ইন্সটল করার জন্য কি কি করতে হবে ?
       </div>
       <div className="grid gap-3 p-2 lg:w-[80%] full">

@@ -3,7 +3,7 @@ import OrderNowButton from "./OrderNowButton";
 
 const HeaderPage = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-4 p-4">
+    <div className="w-full flex flex-col items-center justify-center gap-2 p-4">
       <img
         src="https://sultantracker.com/static/media/logo.ffc7a59c.svg"
         alt="logo"
@@ -14,7 +14,7 @@ const HeaderPage = () => {
         থাকলে আর নয়!
       </div>
 
-      <div className="lg:w-[80%] full  shadow-md  text-white rounded-b-md lg:text-2xl font-extrabold p-4 text-center flex flex-col items-center justify-center">
+      <div className="lg:w-[80%] full  shadow-md  text-white rounded-b-md lg:text-2xl sm:text-xl font-extrabold p-4 text-center flex flex-col items-center justify-center">
         <h1>গাড়ি হারিয়ে গেলে আফসোস নয়, আগেই থাকুন নিরাপদ</h1>{" "}
         <h1>সুলতান ট্র্যাকার থাকলে চোরের খবর পেয়ে যাবেন এক ক্লিকেই!</h1>
       </div>

@@ -4,7 +4,7 @@ import { gpsFeatures } from "../data";
 const Facilities = () => {
   return (
     <div className="w-full  flex flex-col justify-center items-center gap-2">
-      <div className="lg:text-4xl text-xl lg:w-[80%] w-full  rounded-md mt-2 mb-2 text-center font-extrabold p-4 bg-red-300">
+      <div className="lg:text-4xl text-xl lg:w-[80%] w-full  rounded-md mt-2 mb-2 text-center font-extrabold p-4 text-white bg-gray-700">
         সুলতান জিপিএস ট্র্যাকার-এর বিশেষ সুবিধাসমূহ
       </div>
       <div className="w-[95%] lg:w-[80%] h-[90%] flex justify-center items-center flex-col">

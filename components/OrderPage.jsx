@@ -17,7 +17,7 @@ const products = [
   {
     id: "voice",
     name: "Voice GPS x 1",
-    price: 4500,
+    price: 4000,
     oldPrice: 4000,
     img: img_2,
     description: "ভয়েসসহ ডিভাইস, প্রাইস ~৪৫০০~ ৳, অফার ৪০০০ ৳",

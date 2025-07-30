@@ -10,7 +10,7 @@ const ProductCard = ({ image, name, price_1, price_2, price_3 }) => {
           src={image}
           alt={name}
           layout="fill"
-          className="rounded-xl p-7"
+          className="rounded-xl lg:p-4 p-10 h-[150px] w-[150px]"
         />
       </div>
 

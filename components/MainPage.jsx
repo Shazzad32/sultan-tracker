@@ -42,7 +42,7 @@ import img from "../images/background.png";
 
 const MainPage = () => {
   return (
-    <div className="">
+    <div>
       <div
         className="relative bg-cover bg-center"
         style={{ backgroundImage: `url(${img.src})` }}

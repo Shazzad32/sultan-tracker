@@ -4,7 +4,7 @@ import { dddd } from "../data";
 const WhyBuy = () => {
   return (
     <div className="w-full  flex flex-col justify-center items-center gap-2">
-      <div className="lg:text-4xl text-xl lg:w-[80%] w-full rounded-md p-4 text-center font-extrabold bg-red-300">
+      <div className="lg:text-4xl text-xl lg:w-[80%] w-full rounded-md p-4 text-center font-extrabold text-white bg-gray-700">
         আমাদের কাছ থেকেই কেন নিবেন ?
       </div>
       <div className="grid gap-4 lg:w-[80%] w-full">
