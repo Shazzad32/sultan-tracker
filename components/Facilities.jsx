@@ -21,8 +21,8 @@ const Facilities = () => {
               key={index}
               className="flex  w-full items-start p-2 rounded-xl shadow-md border-b-2 border-orange-600 bg-white gap-3"
             >
-              <div className="text-red-500 mt-1 text-xl">👉</div>
-              <div className="text-justify">
+              {/* <div className="text-red-500 mt-1 text-xl">👉</div> */}
+              <div className="text-justify p-2">
                 <strong>{item.title}:</strong> {item.description}
               </div>
             </div>

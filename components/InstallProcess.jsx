@@ -11,7 +11,7 @@ const InstallProcess = () => {
         {installationData.map((item, index) => (
           <div
             key={index}
-            className="flex items-start p-2 rounded-xl shadow-md gap-3 border-b-4 border-orange-600"
+            className="flex items-start p-2 rounded-xl shadow-md gap-3 border-b-2 border-orange-600"
           >
             <div className="text-red-500 mt-1 text-xl">👉</div>
             <div className="text-justify">
