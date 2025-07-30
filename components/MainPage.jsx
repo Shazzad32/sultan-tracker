@@ -39,6 +39,7 @@ import ProductShowcase from "./ProductShowcase";
 import InstallProcess from "./InstallProcess";
 
 import img from "../images/background.png";
+import DealerDetails from "./DealerDetails";
 
 const MainPage = () => {
   return (
@@ -47,10 +48,10 @@ const MainPage = () => {
         className="relative bg-cover bg-center"
         style={{ backgroundImage: `url(${img.src})` }}
       >
-        <div className="absolute inset-0 bg-black opacity-70 z-0" />
+        <div className="absolute inset-0 bg-black opacity-75 z-0" />
         <div className="relative z-10">
           <HeaderPage />
-          <MainVideoPage videoSource="/videos/intro_video.mp4" />
+          <MainVideoPage videoSource="/videos/intro_video_2.mp4" />
           <SliderPage />
         </div>
       </div>
@@ -59,6 +60,7 @@ const MainPage = () => {
       <WhyBuy />
       <Review />
       <InstallProcess />
+      <DealerDetails />
       <OrderPage />
     </div>
   );

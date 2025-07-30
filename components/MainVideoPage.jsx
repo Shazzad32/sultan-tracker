@@ -6,11 +6,11 @@ const MainVideoPage = ({ videoSource = "" }) => {
     url.startsWith("http://") || url.startsWith("https://");
 
   return (
-    <div className="w-full flex flex-col justify-center items-center p-4">
-      <div className="lg:w-[80%] w-full aspect-video rounded-lg overflow-hidden shadow-lg border-8 border-amber-50">
+    <div className="flex flex-col justify-center items-center p-4">
+      <div className="lg:w-[80%] w-full rounded-lg overflow-hidden shadow-lg border-amber-50">
         {isExternalVideo(videoSource) ? (
           <iframe
-            className="w-full h-full"
+            className="w-full"
             src={videoSource}
             title="External Video"
             frameBorder="0"
@@ -18,7 +18,7 @@ const MainVideoPage = ({ videoSource = "" }) => {
             allowFullScreen
           ></iframe>
         ) : (
-          <video className="w-full h-full object-cover" controls>
+          <video className="w-full object-cover" controls>
             <source src={videoSource} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

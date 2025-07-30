@@ -37,7 +37,7 @@ const Review = () => {
           আপনার যেকোনো প্রশ্নে বা সহায়তায় আমরা আছি
         </h1>
         <div className="p-3 mb-2 w-[80%] lg:w-[60%] bg-orange-400 text-white text-2xl font-extrabold flex items-center justify-center rounded-md">
-          01812-266644
+          01409-962099
         </div>
       </div>
     </div>
