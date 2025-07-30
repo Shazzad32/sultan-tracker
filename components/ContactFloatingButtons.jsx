@@ -24,7 +24,6 @@ const ContactFloatingButtons = () => {
         rel="noopener noreferrer"
         className="w-12 h-12 rounded-full bg-blue-600 shadow-lg text-white flex items-center justify-center hover:scale-105 transition-transform"
       >
-        {/* <img src="/image-folder/facebook.png" alt="" className="w-7 h-7" /> */}
         <FacebookRoundedIcon className="w-7 h-7" />
       </a>
     </div>
