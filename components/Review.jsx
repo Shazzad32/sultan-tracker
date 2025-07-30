@@ -11,7 +11,7 @@ const videos = [
 const Review = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <div className="lg:text-4xl text-xl lg:w-[80%] w-full rounded-md mt-2 mb-2 text-center font-extrabold p-6 text-white bg-gray-700">
+      <div className="lg:text-4xl text-xl lg:w-[80%] w-full rounded-md mt-6 mb-2 text-center font-extrabold p-6 text-white bg-gray-700">
         কাস্টমার রিভিউ
       </div>
       <div className="h-auto lg:w-[80%] w-full bg-white flex flex-col lg:flex-row gap-4 justify-center items-center p-4 rounded-lg shadow">
