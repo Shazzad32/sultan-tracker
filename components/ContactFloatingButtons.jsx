@@ -10,7 +10,7 @@ const ContactFloatingButtons = () => {
   return (
     <div className="fixed bottom-5 right-5 flex flex-col gap-3 z-50">
       <a
-        href="https://wa.me/8801313343311"
+        href="https://wa.me/8801409962099"
         target="_blank"
         rel="noopener noreferrer"
         className="w-12 h-12 rounded-full bg-green-500 text-white shadow-lg flex items-center justify-center hover:scale-105 transition-transform"
