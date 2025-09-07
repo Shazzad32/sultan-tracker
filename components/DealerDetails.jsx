@@ -83,7 +83,7 @@ const DealerDetails = () => {
               boxShadow: "0px 8px 20px rgba(0,0,0,0.15)",
             }}
             key={index}
-            className="flex items-start p-4 rounded-xl bg-white shadow-md gap-3 border-l-4 border-orange-500"
+            className="flex w-full items-start p-4 rounded-xl bg-white border border-orange-200"
           >
             {/* Animated Icon */}
             <motion.div

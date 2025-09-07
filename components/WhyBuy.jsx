@@ -44,7 +44,7 @@ const WhyBuy = () => {
               scale: 1.03,
               boxShadow: "0px 8px 25px rgba(0,0,0,0.2)",
             }}
-            className="flex items-start p-4 rounded-xl bg-white shadow-md gap-3 border-l-4 border-orange-500"
+            className="flex w-full items-start p-4 rounded-xl bg-white border border-orange-200"
           >
             {/* Bouncing arrow */}
             <motion.div
