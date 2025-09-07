@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import OrderNowButton from "./OrderNowButton";
+import { motion } from "framer-motion";
 
 const ProductCard = ({ image, name, price_1, price_2, price_3 }) => {
   return (
@@ -21,7 +22,7 @@ const ProductCard = ({ image, name, price_1, price_2, price_3 }) => {
       <p className="font-bold">
         রেগুলার প্রাইস-<del className="text-red-500">{price_1}</del>-টাকা
       </p>
-      <p className="text-orange-600 font-bold text-xl">
+      <p className="text-orange-600 font-bold text-xl text-center">
         স্পেশাল অফার প্রাইস-<strong className="text-red-500">{price_2}</strong>
         -টাকা
       </p>

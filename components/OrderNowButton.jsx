@@ -1,5 +1,7 @@
 "use client";
+import { motion } from "framer-motion";
 export default function OrderNowButton() {
+  const colors = ["#FF5733", "#8f0606", "#3357FF", "#FF33A8", "#FFA533"];
   const handleClick = () => {
     const orderSection = document.getElementById("order");
     if (orderSection) {
@@ -8,11 +10,19 @@ export default function OrderNowButton() {
   };
 
   return (
-    <button
+    <motion.button
+      animate={{
+        backgroundColor: colors,
+      }}
+      transition={{
+        duration: 5,
+        repeat: Infinity,
+        repeatType: "mirror",
+      }}
       onClick={handleClick}
-      className="cursor-pointer bg-red-500 text-white font-bold py-3 px-12 mt-3 rounded-md hover:bg-red-600 transition-all"
+      className="cursor-pointer w-full  font-bold py-3 px-12 mt-3 rounded-md transition-all bg-gradient-to-r text-white"
     >
       এখনি অর্ডার করুন
-    </button>
+    </motion.button>
   );
 }

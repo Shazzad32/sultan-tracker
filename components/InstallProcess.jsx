@@ -1,25 +1,66 @@
+"use client";
 import React from "react";
 import { installationData } from "../data";
+import { motion } from "framer-motion";
+
+// Animation Variants
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.2 },
+  },
+};
+
+const card = {
+  hidden: { opacity: 0, y: 40 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
 
 const InstallProcess = () => {
   return (
-    <div className="w-full flex flex-col items-center ">
-      <div className="mt-2 lg:text-4xl text-xl lg:w-[80%] w-full text-center font-extrabold rounded-md p-6 text-white bg-gray-700">
+    <div className="w-full flex flex-col items-center gap-4">
+      {/* Title Pulse Animation */}
+      <motion.div
+        animate={{ scale: [1, 1.05, 1] }}
+        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        className="mt-4 lg:text-4xl text-xl lg:w-[80%] w-[95%] text-center font-extrabold rounded-md p-6 text-white bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 shadow-lg"
+      >
         ইন্সটল করার জন্য কি কি করতে হবে ?
-      </div>
-      <div className="grid gap-3 p-2 lg:w-[80%] full">
+      </motion.div>
+
+      {/* Installation Steps with Stagger Animation */}
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="grid gap-4 lg:w-[80%] w-[95%] mt-4"
+      >
         {installationData.map((item, index) => (
-          <div
+          <motion.div
             key={index}
-            className="flex items-start p-2 rounded-xl shadow-md gap-3 border-b-2 border-orange-600"
+            variants={card}
+            whileHover={{
+              scale: 1.03,
+              boxShadow: "0px 8px 25px rgba(0,0,0,0.2)",
+            }}
+            className="flex items-start p-4 rounded-xl bg-white shadow-md gap-3 border-l-4 border-orange-500"
           >
-            <div className="text-red-500 mt-1 text-xl">👉</div>
+            {/* Bouncing arrow */}
+            <motion.div
+              animate={{ y: [0, -5, 0] }}
+              transition={{ duration: 1, repeat: Infinity }}
+              className="text-red-500 mt-1 text-xl"
+            >
+              👉
+            </motion.div>
             <div className="text-justify">
-              <strong>{item.title}</strong> {item.content}
+              <strong className="text-orange-600">{item.title}</strong>{" "}
+              {item.content}
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
