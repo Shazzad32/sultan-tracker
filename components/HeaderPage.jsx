@@ -28,10 +28,11 @@ const HeaderPage = () => {
     <div className="w-full flex flex-col items-center justify-center gap-2 p-4">
       <Image
         src={Logo}
-        alt="logo"
+        alt="Sultan Tracker Logo"
         width={200}
         height={90}
-        className="h-[90px] w-[200px]"
+        className="w-[140px] h-[60px] sm:w-[160px] sm:h-[70px] lg:w-[200px] lg:h-[90px] object-contain"
+        priority
       />
       <motion.div
         className="lg:text-4xl text-2xl font-extrabold text-center p-4 lg:w-[80%] w-[95%]"
