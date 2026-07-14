@@ -2,6 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import GraphemeSplitter from "grapheme-splitter";
+import Logo from "@/images/logo.png";
+import Image from "next/image";
 
 const HeaderPage = () => {
   const text = "গাড়ি চুরির ভয় SULTAN TRACKER থাকলে আর নয়!";
@@ -24,10 +26,12 @@ const HeaderPage = () => {
 
   return (
     <div className="w-full flex flex-col items-center justify-center gap-2 p-4">
-      <img
-        src="https://sultantracker.com/static/media/logo.ffc7a59c.svg"
+      <Image
+        src={Logo}
         alt="logo"
-        className="h-[70px] w-[200px]"
+        width={200}
+        height={90}
+        className="h-[90px] w-[200px]"
       />
       <motion.div
         className="lg:text-4xl text-2xl font-extrabold text-center p-4 lg:w-[80%] w-[95%]"

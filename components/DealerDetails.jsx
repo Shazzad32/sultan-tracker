@@ -85,7 +85,6 @@ const DealerDetails = () => {
             key={index}
             className="flex w-full items-start p-4 rounded-xl bg-white border border-orange-200"
           >
-            {/* Animated Icon */}
             <motion.div
               animate={{ y: [0, -5, 0] }}
               transition={{ duration: 1, repeat: Infinity }}
