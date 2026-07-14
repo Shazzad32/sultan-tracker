@@ -45,25 +45,15 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-3 text-sm">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
+              <li>Home</li>
 
-              <li>
-                <Link href="/">About Us</Link>
-              </li>
+              <li>About Us</li>
 
-              <li>
-                <Link href="/">Services</Link>
-              </li>
+              <li>Services</li>
 
-              <li>
-                <Link href="/">Dealer</Link>
-              </li>
+              <li>Dealer</li>
 
-              <li>
-                <Link href="/contact">Contact</Link>
-              </li>
+              <li>Contact</li>
             </ul>
           </div>
 
